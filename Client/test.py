@@ -2,9 +2,10 @@ import logging
 import pprint
 
 from filer import Filer
-from master import Master
 from operations import Operations
-from weed.util import Status
+from weed.util import Status # pylint: disable=import-error
+from master import Master
+
 
 logging.root.setLevel(logging.NOTSET)
 logger = logging.getLogger('TEST') 

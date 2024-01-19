@@ -1,4 +1,4 @@
-from weed.master import WeedMaster
+from weed.master import WeedMaster # pylint: disable=import-error
 from config import Config
 class Master:
     port = 0
