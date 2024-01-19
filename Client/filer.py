@@ -14,4 +14,3 @@ class Filer:
         self.host = config['filer_host']
         url = f'http://{self.host}:{self.port}'
         self.wf = WeedFiler(url)
-
