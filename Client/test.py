@@ -1,4 +1,4 @@
-import logging
+import logging # pylint: disable=missing-module-docstring
 import pprint
 
 from filer import Filer
@@ -75,7 +75,7 @@ def test_filer():
     f_get = wf.get(rem_path)
     if f_get:
         
-        logger.info(f'File Get via Filer. Content Length: {f_get['content_length']}B Content Type: {f_get['content_type']}')
+        logger.info(f'File Get via Filer. Content Length: {f_get['content_length']}B Content Type: {f_get['content_type']}') # pylint: disable=syntax-error
     
     # delete
     f_delete = wf.delete(rem_path)
