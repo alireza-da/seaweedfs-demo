@@ -18,7 +18,7 @@
 - **Volume**
   - init.sh: Shell script to launch a volume server that connects to the master server. Modify ``-mserver="192.168.1.109:9333"`` and ``-ip="192.168.1.110"`` based on your master and volume server ip addresses. You may also want to change ``-dataCenter`` and ``-rack`` as well for each volume you set up.
 - **SeaweedFS Client**
-    Developing py-weed library and executing some tests on it
+    Developing [py-weed](https://github.com/darkdarkfruit/python-weed) library and executing some tests on it
   - config.yaml: Modify variables based on your master's address and master's port. For filer server you may also need to modify current configuration
   - config.py: You don't have to make any modification on this file. It just reads/writes on ``config.yaml``
   - filer.py: Contains Filer model `WeedFiler` that handles filer instantiation and connection.
@@ -30,4 +30,4 @@
     ``` 
     You must have virtual environment set up before executing any python script. All libraries inside `requirements.txt` must have been installed on the mentioned environment.
 
-### Refer to SeaweedFS Documentation for more information
+##### Refer to [SeaweedFS Documentation](https://github.com/seaweedfs/seaweedfs/wiki/) for more information
