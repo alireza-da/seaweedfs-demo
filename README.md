@@ -3,12 +3,12 @@
 - Developing a Python based client application for SeaweedFS
 ### Project Hierarchy
 - **Master**
-    - master.sh: Shell script to run master server. find and replace your server id with **-ip=<your_ip_address>** 
+    - master.sh: Shell script to run master server. find and replace your server id with `-ip=<your_ip_address>`
         ```console
         foo@bar:~$ chmod -x master.sh
         foo@bar:~$ bash master.sh
         ```
-    - filer.sh: Shell script to launch filer server on master server. Configure it based on your desires. Replace your master ip address with **-master=<your_ip_address>**, accordingly for your filer server address replace **-ip=<your_ip_address>**
+    - filer.sh: Shell script to launch filer server on master server. Configure it based on your desires. Replace your master ip address with `-master=<your_ip_address>`, accordingly for your filer server address replace `-ip=<your_ip_address>`
         ```console
         foo@bar:~$ chmod -x filer.sh
         foo@bar:~$ bash filer.sh
@@ -29,3 +29,5 @@
     (venv) foo@terminal:$ python  test.py
     ``` 
     You must have virtual environment set up before executing any python script. All libraries inside `requirements.txt` must have been installed on the mentioned environment.
+
+### Refer to SeaweedFS Documentation for more information
